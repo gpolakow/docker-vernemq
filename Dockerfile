@@ -1,8 +1,8 @@
-FROM erlang:21 AS build-env
+FROM erlang:22.1 AS build-env
 
 WORKDIR /vernemq-build
 
-ARG VERNEMQ_GIT_REF=pdm-mqtt
+ARG VERNEMQ_GIT_REF=1.9.2-pdm.0
 ARG TARGET=rel
 ARG VERNEMQ_REPO=https://github.com/gpolakow/vernemq.git
 
